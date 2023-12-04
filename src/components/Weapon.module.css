@@ -1,0 +1,74 @@
+.weapon {
+  width: min(36rem, 100%);
+  margin-inline: auto;
+  color: var(--blackColor);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+.weapon .title {
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+  display: flex;
+}
+
+.weapon .title p {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weapon .title p:nth-child(1),
+.weapon .content ul li p:nth-child(1) {
+  width: 50%;
+}
+
+.weapon .title p:nth-child(2),
+.weapon .title p:nth-child(4),
+.weapon .title p:nth-child(3),
+.weapon .content ul li p:nth-child(3),
+.weapon .content ul li p:nth-child(2),
+.weapon .content ul li p:nth-child(4) {
+  width: 25%;
+}
+
+.weapon .content ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.weapon .content ul li {
+  height: 3.2rem;
+  border: 1px solid var(--whiteColor);
+  display: flex;
+}
+
+.weapon .content ul li ~ li {
+  border-top: 0;
+}
+
+.weapon .content ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weapon .content ul li p:nth-child(2),
+.weapon .content ul li p:nth-child(4) {
+  padding-inline: 0.4rem;
+  background: var(--baseColor);
+  align-items: end;
+}
+
+.weapon .content ul li p:nth-child(4) {
+  justify-content: end;
+}
+
+.weapon .content::after {
+  content: "";
+  display: block;
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+}

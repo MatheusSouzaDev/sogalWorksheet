@@ -1,0 +1,72 @@
+.equipment {
+  width: min(36rem, 100%);
+  margin-inline: auto;
+  color: var(--blackColor);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+.equipment .title {
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+  display: flex;
+}
+
+.equipment .title p {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment .title p:nth-child(1),
+.equipment .content ul li p:nth-child(1) {
+  width: 50%;
+}
+
+.equipment .title p:nth-child(2),
+.equipment .title p:nth-child(3),
+.equipment .content ul li p:nth-child(2),
+.equipment .content ul li p:nth-child(3) {
+  width: 25%;
+}
+
+.equipment .content ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.equipment .content ul li {
+  height: 3.2rem;
+  border: 1px solid var(--whiteColor);
+  display: flex;
+}
+
+.equipment .content ul li ~ li {
+  border-top: 0;
+}
+
+.equipment .content ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment .content ul li p:nth-child(2) {
+  border-left: 2px solid var(--whiteColor);
+  border-right: 2px solid var(--whiteColor);
+}
+
+.equipment .content ul li p:nth-child(3) {
+  padding-right: 0.4rem;
+  background: var(--baseColor);
+  justify-content: end;
+}
+
+.equipment .content::after {
+  content: "";
+  display: block;
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+}

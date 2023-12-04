@@ -1,0 +1,24 @@
+.proficiency {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.line {
+  padding-inline: 0.4rem;
+  border-bottom: 2px solid var(--lineColor);
+}
+
+.box span {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}

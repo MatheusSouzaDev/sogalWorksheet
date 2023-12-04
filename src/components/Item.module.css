@@ -1,0 +1,72 @@
+.item {
+  width: min(36rem, 100%);
+  margin-inline: auto;
+  color: var(--blackColor);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+.item .title {
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+  display: flex;
+}
+
+.item .title p {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .title p:nth-child(1),
+.item .title p:nth-child(3),
+.item .content ul li p:nth-child(1),
+.item .content ul li p:nth-child(3) {
+  width: 25%;
+}
+
+.item .title p:nth-child(2),
+.item .content ul li p:nth-child(2) {
+  width: 75%;
+}
+
+.item .content ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.item .content ul li {
+  height: 3.2rem;
+  border: 1px solid var(--whiteColor);
+  display: flex;
+}
+
+.item .content ul li ~ li {
+  border-top: 0;
+}
+
+.item .content ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .content ul li p:nth-child(1),
+.item .content ul li p:nth-child(3) {
+  background: var(--baseColor);
+}
+
+.item .content ul li p:nth-child(3) {
+  padding-right: 0.4rem;
+  justify-content: end;
+  align-items: end;
+}
+
+.item .content::after {
+  content: "";
+  display: block;
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+}

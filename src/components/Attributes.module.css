@@ -1,0 +1,30 @@
+.attribute {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.circle {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid var(--lineColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box span {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}

@@ -1,0 +1,64 @@
+.magic {
+  width: min(36rem, 100%);
+  margin-inline: auto;
+  color: var(--blackColor);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+.magic .title {
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+  display: flex;
+}
+
+.magic .title p {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.magic .title p:nth-child(1),
+.magic .content ul li p:first-child {
+  width: 25%;
+}
+
+.magic .title p:nth-child(2),
+.magic .content ul li p:last-child {
+  width: 75%;
+}
+
+.magic .content ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.magic .content ul li {
+  height: 3.2rem;
+  border: 1px solid var(--whiteColor);
+  display: flex;
+}
+
+.magic .content ul li ~ li {
+  border-top: 0;
+}
+
+.magic .content ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magic .content ul li p:first-child {
+  background: var(--baseColor);
+}
+
+.magic .content::after {
+  content: "";
+  display: block;
+  height: 3.2rem;
+  background-color: var(--whiteColor);
+}
