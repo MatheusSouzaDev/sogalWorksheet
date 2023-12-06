@@ -6,7 +6,7 @@ export default function MySwiper({ slides, type, life, armor, energy }) {
   const progress = [life,armor,energy];
   return (
     <>
-      <swiper-container loop="true" autoplay-delay="8000">
+      <swiper-container loop="true" autoplay-delay="8000" >
         {slides.map((slide, index) => {
           const currentProgress = progress[index]
 

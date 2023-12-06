@@ -5,7 +5,7 @@ export default function Weapon() {
   const renderWeaponItem = (weapon, index) => (
     <li key={index}>
       <p>{weapon[0]}</p>
-      <p>{weapon[1]}</p>
+      <p>+{weapon[1]}</p>
       <p>{weapon[2]}</p>
       <p>{weapon[3]}kg</p>
     </li>
@@ -13,7 +13,7 @@ export default function Weapon() {
   const renderDefaultWeaponItem = () => (
     <li>
       <p>sem arma</p>
-      <p>vazio</p>
+      <p>+0</p>
       <p>vazio</p>
       <p>0kg</p>
     </li>

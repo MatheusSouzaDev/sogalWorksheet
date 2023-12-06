@@ -2,23 +2,23 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .box {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-}
-
-.line {
-  padding-inline: 0.4rem;
-  border-bottom: 2px solid var(--lineColor);
 }
 
 .box span {
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+.box span:nth-child(2){
+  padding-top: .4rem;
+  padding-inline: 0.2rem;
+  border-top: 2px solid var(--lineColor);
 }

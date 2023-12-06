@@ -1,10 +1,15 @@
 .button {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
   background: none;
   border: none;
   border-radius: 100%;
   transition: all 0.8s;
+}
+
+.button:nth-child(2){
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .button:hover {

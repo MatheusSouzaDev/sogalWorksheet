@@ -11,7 +11,7 @@ export default function Equipment() {
   );
   const renderDefaultEquipmentItem = () => (
     <li>
-      <p>sem equipamento</p>
+      <p>sem equip.</p>
       <p>vazio</p>
       <p>0kg</p>
     </li>

@@ -6,7 +6,7 @@ export default function Attributes({ attributesPoints }) {
       {attributesPoints.map((attribute, index) => (
         <div key={index} className={styles.box}>
           <div className={styles.circle}>
-            <span>{attribute}</span>
+            <span className={styles.text}>{attribute}</span>
           </div>
           {(() => {
             switch (index) {

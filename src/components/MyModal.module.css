@@ -1,0 +1,48 @@
+.overlayModal {
+  background-color: var(--blackColor);
+  border: 1px solid var(--lineColor);
+  border-radius: 8px 0;
+  position: fixed;
+  z-index: 1;
+  inset: 2%;
+}
+
+.contentModal {
+  padding: 1.6rem;
+  color: var(--strongTextColor);
+  background: var(--lineColor);
+  border: 1px solid var(--baseColor);
+  border-radius: 0 8px;
+  position: absolute;
+  inset: 4%;
+}
+
+.closeModal {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: small;
+  color: var(--whiteColor);
+  background: none;
+  border: 1px solid var(--baseColor);
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

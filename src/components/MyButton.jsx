@@ -1,9 +1,9 @@
-import styles from './MyButton.module.css'
+import styles from "./MyButton.module.css";
 
-export default function MyButton({image}) {
+export default function MyButton({ image, handleClick }) {
   return (
-    <button className={styles.button}>
-        <img src={image} alt="imagem fornecida pelo usuário" />
+    <button className={styles.button} onClick={handleClick}>
+      <img src={image} alt="imagem fornecida pelo usuário" />
     </button>
-  )
+  );
 }

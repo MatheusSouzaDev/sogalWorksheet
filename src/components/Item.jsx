@@ -4,14 +4,14 @@ export default function Item() {
   const items = [];
   const renderItemItem = (item, index) => (
     <li key={index}>
-      <p>{item[0]}</p>
+      <p>{item[0]}<span>x</span></p>
       <p>{item[1]}</p>
       <p>{item[2]}kg</p>
     </li>
   );
   const renderDefaultItemItem = () => (
     <li>
-      <p>vazio</p>
+      <p>0<span>x</span></p>
       <p>sem item</p>
       <p>0kg</p>
     </li>

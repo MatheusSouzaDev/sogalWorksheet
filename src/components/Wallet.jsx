@@ -8,26 +8,26 @@ export default function Wallet({ attributesPoints }) {
     <div className={styles.change}>
       <div className={styles.left}>
         <div className={styles.valueBox}>
-          <p>0sg</p>
-          <p>SG</p>
+          <p className={styles.paragraph}>0sg</p>
+          <p className={styles.paragraph}>SG</p>
         </div>
         <div className={styles.valueBox}>
-          <p>0xp</p>
-          <p>xp</p>
+          <p className={styles.paragraph}>0xp</p>
+          <p className={styles.paragraph}>xp</p>
         </div>
       </div>
       <div className={styles.right}>
         <div className={styles.valueBox}>
-          <p>0kg</p>
-          <p>atual</p>
+          <p className={styles.paragraph}>0kg</p>
+          <p className={styles.paragraph}>atual</p>
         </div>
         <div className={styles.valueBox}>
-          <p>{maxWeigth}kg</p>
-          <p>max</p>
+          <p className={styles.paragraph}>{maxWeigth}kg</p>
+          <p className={styles.paragraph}>max</p>
         </div>
         <div className={styles.valueBox}>
-          <p>{combatWeigth}kg</p>
-          <p>combat</p>
+          <p className={styles.paragraph}>{combatWeigth}kg</p>
+          <p className={styles.paragraph}>combat</p>
         </div>
       </div>
     </div>

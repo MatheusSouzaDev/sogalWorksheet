@@ -17,7 +17,7 @@
   padding-inline:.8rem;
   display: flex;
   justify-content: start;
-  gap: 1.2rem;
+  gap: .8rem;
 }
 
 .right {
@@ -31,7 +31,11 @@
   flex-direction: column;
 }
 
-.valueBox p:first-child {
+.paragraph{
+  padding-top: .4rem;
+}
+
+.paragraph:first-child {
   padding-inline: 0.4rem;
   border-bottom: 1px solid var(--whiteColor);
 }

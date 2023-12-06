@@ -1,4 +1,3 @@
-// import styles from "./Skills.module.css";
 import Magic from "./Magic.jsx";
 import Weapon from "./Weapon.jsx";
 import Equipment from "./Equipment.jsx";

@@ -18,7 +18,7 @@ export default function Proficiency({ attributesPoints }) {
     <div className={styles.proficiency}>
       {proficiencyPoints.map((proficiency, index) => (
         <div key={index} className={styles.box}>
-          <div className={styles.line}>
+          <div>
             <span>{proficiency}</span>
           </div>
           {(() => {
