@@ -1,14 +1,15 @@
 import { useState } from "react";
 import styles from "./Dashboard.module.css";
-import Note from "../assets/Attributes.svg";
+import ImageAttributes from "../assets/Attributes.svg";
 import MyModal from "../components/MyModal.jsx";
-import Status from "../assets/Character.svg";
+import ImageCharacter from "../assets/Character.svg";
 import Skills from "../components/Skills.jsx";
 import Wallet from "../components/Wallet.jsx";
 import MySwiper from "../components/MySwiper.jsx";
+import CharacterForm from "../components/CharacterForm.jsx";
 import MyButton from "../components/MyButton.jsx";
 import Attributes from "../components/Attributes.jsx";
-import DiceOne from "../assets/diceTwentyFacesOne.svg";
+import ImageDiceOne from "../assets/diceTwentyFacesOne.svg";
 import Proficiency from "../components/Proficiency.jsx";
 import CharacterImage from "../components/CharacterImage.jsx";
 
@@ -38,30 +39,22 @@ export default function Dashboard() {
         <MySwiper slides={data} type="span" />
         <div className={styles.buttonBox}>
           <MyButton
-            image={Status}
-            handleClick={() => setOpenModalAttribute(true)}
-          />
-          <MyButton
-            image={Note}
+            image={ImageCharacter}
             handleClick={() => setOpenModalCharacter(true)}
           />
           <MyButton
-            image={DiceOne}
+            image={ImageAttributes}
+            handleClick={() => setOpenModalAttribute(true)}
+          />
+          <MyButton
+            image={ImageDiceOne}
             handleClick={() => setOpenModalTest(true)}
           />
           <MyModal
             isOpen={openModalCharacter}
             setCloseModal={() => setOpenModalCharacter(!openModalCharacter)}
           >
-            <h2>Eu sou o modal character</h2>
-            <br />
-            <br />
-            <p>
-              Aqui ficará a história do personagem, sua descrição fisica, seus
-              traços de estado e suas anotações da campanha.
-            </p>
-            <br />
-            <span>Próxima atualização chega em breve!!!</span>
+            <CharacterForm/>
           </MyModal>
           <MyModal
             isOpen={openModalAttribute}
@@ -71,10 +64,8 @@ export default function Dashboard() {
             <br />
             <br />
             <p>
-              Aqui é onde será feito as alterações de dados como as
-              características dos personagens, seus atributos, itens,magias,
-              equipamentos, além das anotações da história pregressa, do traço
-              de estado e informações da campanha.
+              Aqui ficará a história do personagem, sua descrição fisica, seus
+              traços de estado e suas anotações da campanha.
             </p>
             <br />
             <span>Próxima atualização chega em breve!!!</span>

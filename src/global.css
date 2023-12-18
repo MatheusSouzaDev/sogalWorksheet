@@ -41,7 +41,8 @@ body {
 
 body,
 input,
-button{
+select,
+button {
   font-size: 1.6rem;
   font-family: "BerryRotunda", sans-serif;
   color: var(--smoothTextColor);

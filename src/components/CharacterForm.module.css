@@ -1,0 +1,150 @@
+form,
+input,
+select {
+  text-transform: capitalize;
+}
+
+fieldset {
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border: 1px solid var(--backgroundColor);
+  border-radius: 8px;
+}
+
+legend {
+  padding: 1.2rem 0.8rem 0.8rem;
+  border: 1px solid var(--backgroundColor);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.topBox,
+.bottomBox {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2.4rem;
+}
+
+.inputBox,
+.selectBox {
+  position: relative;
+}
+
+.inputBox label,
+.selectBox label {
+  pointer-events: none;
+  position: absolute;
+  transition: 0.8s;
+  bottom: 0.2rem;
+  left: 0;
+}
+
+.inputBox input,
+.selectBox select {
+  width: 12rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  color: var(--strongSmothColor);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--backgroundColor);
+  outline: none;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.selectBox select:focus ~ label,
+.selectBox select:valid ~ label {
+  font-size: 1.2rem;
+  color: var(--backgroundColor);
+  bottom: 3.2rem;
+}
+
+.inputBox input[type="number"] {
+  width: 8rem;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.radioBox {
+  width: 6.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attributesBox {
+  margin-block: 2.4rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.attributesBox h4 {
+  color: var(--backgroundColor);
+  position: absolute;
+  top: 6.4rem;
+  left: 2.4rem;
+}
+
+.setAttributesBox {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.setAttributesBox > p {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid var(--backgroundColor);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.setAttributesBox > p span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.setAttributesBox > p:first-child span {
+  height: 1.2rem;
+}
+
+.bottomBox {
+  margin-block: 0 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  fieldset {
+    padding: 1.6rem;
+  }
+
+  .topBox,
+  .bottomBox {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .inputBox input,
+  .selectBox select {
+    width: 16rem;
+  }
+
+  .attributesBox h4 {
+    top: 5.6rem;
+  }
+}
